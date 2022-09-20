@@ -1,0 +1,337 @@
+/*RESET*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*CELULAR*/
+
+/*BODY*/
+.cuerpo-home{
+    background-color:hsl(60, 3%, 20%) ;  
+    color: aliceblue;
+    font-family: aboreto;
+}
+
+
+
+/*HEADER*/
+
+
+/*MAIN*/
+
+main .slider .imagen-home{
+width:100%;
+height:auto;
+justify-content: center;
+margin-bottom: 50px;
+
+ }
+
+
+ .main-productos .iconos{
+    display: none;
+ }
+
+main h1{
+    text-align: center;
+}
+
+main .productos-home{
+display: grid;
+justify-content: space-evenly;
+align-items: center;
+
+}
+
+
+main .productos-home img{
+    
+    max-width: 400px;
+    margin: 1rem;
+}
+
+
+.boton{
+    text-decoration: none;
+    border: .11rem solid;
+    border-color: aliceblue;
+    border-radius: 1rem;
+    padding: 0.6rem;
+    margin: 1rem;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 0.15rem;
+    align-items: center;
+    text-align: center;
+
+}
+
+main .productos-home h1{
+    text-align: center;
+}
+
+/*FOOTER*/
+
+.footer-home{
+    display: flex;
+    background-color: black;
+    padding: 10px;
+    margin-top: 10px;
+    justify-content: space-evenly;
+    font-size: 13px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+   
+   
+  
+}
+
+ .footer-home h3 {
+    font-size: 13px;
+    align-self: center;
+   
+    
+   
+  
+}
+
+.footer-home .iconos-home img{
+    max-width: 20px;
+    margin: 5px;
+   
+}
+
+
+/*COMPUTADORA*/
+@media screen and (min-width:600px){
+
+    main .productos-home{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        
+
+        }
+
+
+        .main-productos .iconos{
+            background-color: black;
+            display: flex;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            justify-content: center;
+            align-items: center;
+            justify-items: center;      
+            align-content: center;  /*no se porque no me lleva al centro los iconos :( */
+            }
+        
+
+              
+        .main-productos .iconos h3{
+                text-align: center;
+            }
+        
+        
+        .main-productos .iconos img{
+            margin: 1rem;
+            width: 20%;
+            animation-name: animacion; 
+            animation-duration: 2s;
+            animation-iteration-count:infinite;
+            filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.452))
+        }
+        
+        
+        @keyframes animacion { 
+                0%{
+                    transform: translateY(0px);
+                }
+        
+                50%{
+                    transform: translateY(3px);
+                }
+        
+                100%{
+                    transform: translateY(0);
+              
+                }
+                
+        }
+        
+
+        main .productos-home img:hover{
+            opacity: 0.5;
+            
+            
+            }
+    
+
+        main h1{
+            text-align: center;
+           
+        }
+
+        main .productos-home .boton{
+            display: none;
+           
+
+        }
+    
+    
+        .footer-home{
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .footer-home h3 {
+            align-self: center;
+            justify-self: center;
+        }
+}
+
+   
+/*PÁGINA PRODUCTOS*/
+
+.main-productos .imagen-productos img{
+    width:100%;
+    height:auto;
+    justify-content: center;
+
+}
+   
+.main-productos .categorias-links {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    background-color: black;
+    padding: 2rem;
+   
+}  
+
+.main-productos .categorias-links h2{
+    font-size: 26px ;
+}    
+
+.main-productos .categorias-links h4 a{
+    font-size: 20px;
+    margin: 1rem;
+    text-decoration: none;
+    color: aliceblue;
+    
+}  
+
+.main-productos .categorias-links h4 a:hover{
+    color: rgba(153, 154, 155, 0.712);
+}
+
+.main-productos .fila-1{
+margin-top: 2rem;
+display: grid;
+justify-items: center;
+align-content: center;
+}
+
+
+.main-productos .fila-1 img{
+    width: 400px;
+    
+}
+
+.main-productos .fila-1 p{
+    font-size: 25px;
+    
+}
+
+.main-productos .fila-2{
+    margin-top: 2rem;
+    display: flex;
+    justify-items: center;
+    align-content: center;
+    }
+
+.main-productos .fila-2 img{
+    width: 400px;
+    
+    
+}
+
+.main-productos .fila-2 p{
+    font-size: 25px;
+}
+
+@media screen and (min-width:600px){
+    
+    .grid-productos{
+        display: grid;
+        grid-template-columns: .4fr 1.6fr ;
+        grid-template-rows: 1fr 1fr ;
+        grid-template-areas:
+        "cat playeras1"
+        "cat playeras2";
+
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+        gap: 10px;
+       
+        
+    }
+
+       
+    .main-productos .categorias-links{
+        grid-template-areas: cat;
+        
+    }
+
+    .main-productos .categorias-links h4{
+        font-size: 9px;
+       
+        
+    }
+
+    .main-productos .fila-1{
+        grid-area: playeras1;
+        
+
+    }
+
+    .main-productos .fila-2{
+        grid-area: playeras2;
+        
+    }
+
+
+    .main-productos .fila-1{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        
+
+    }
+    .main-productos .fila-2{
+        display: flex;
+        
+    }
+
+    .main-productos .fila-2 img{
+        width: 300px;
+        height: 300px;
+        margin: 1rem;
+    }
+
+    .main-productos .fila-1 img{
+        width: 300px;
+        height: 300px;
+        margin: 1rem;
+    }
+        
+
+    }
