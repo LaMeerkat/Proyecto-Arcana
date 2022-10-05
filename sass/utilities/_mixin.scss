@@ -1,0 +1,41 @@
+@mixin boton{
+    text-decoration: none;
+    border: .11rem solid;
+    border-color: aliceblue;
+    border-radius: 1rem;
+    padding: 0.6rem;
+    margin: 1rem;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 0.15rem;
+}
+
+
+@mixin boton-web{
+    text-decoration: none;
+    border: .11rem solid;
+    border-color: aliceblue;
+    border-radius: 1rem;
+    padding: 0.6rem;
+    margin: 1rem;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 0.15rem;
+        &:hover{
+            transform: scale(1.1);
+        }
+}
+
+
+@mixin footer{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding: 1rem;
+    padding-top: 2rem;
+    margin-top: 3rem;
+    font-size: 15px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
