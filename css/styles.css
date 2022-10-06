@@ -98,7 +98,7 @@ footer {
 .somos-info {
   margin-top: 1rem; }
   .somos-info img {
-    width: 400px; }
+    width: 350px; }
   .somos-info p {
     background-color: #272727;
     padding: 1rem;
@@ -139,9 +139,12 @@ footer {
   margin: 1rem;
   font-size: 30px; }
 
+.rebaja img {
+  width: 350px; }
+
 .registro {
-  margin-top: 2rem;
-  margin-bottom: 2rem; }
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
   .registro .formulario {
     background-color: #272727;
     border-radius: 10px;
@@ -175,7 +178,7 @@ footer {
 
 .mapa {
   margin: 2rem;
-  width: 500px;
+  width: 350px;
   border-radius: 10px; }
 
 @media screen and (min-width: 600px) {

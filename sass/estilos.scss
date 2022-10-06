@@ -112,7 +112,7 @@ footer{
    @extend %flex-colum;
 
    img{
-    width: 400px;
+    width: 350px;
    }
 
    p{
@@ -158,14 +158,18 @@ footer{
         font-size: 30px;
     }
 
+    img{
+        width: 350px
+    }
+
 }
 
 //CONTACTANOS
 
 .registro{
     @extend %flex-colum;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     .formulario{
         background-color:$color-secundario;
         border-radius: 10px;
@@ -209,7 +213,7 @@ footer{
 
 .mapa{
     margin: 2rem;
-    width: 500px;
+    width: 350px;
     border-radius: 10px;
 }
 
