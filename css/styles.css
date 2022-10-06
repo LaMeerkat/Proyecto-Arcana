@@ -41,7 +41,7 @@
   justify-items: center; }
 
 .nuevo img {
-  width: 450px; }
+  width: 350px; }
 
 .nuevo .boton {
   text-decoration: none;
@@ -81,7 +81,7 @@ footer {
 .grid-productos {
   margin-top: 2rem; }
   .grid-productos img {
-    width: 450px; }
+    width: 350px; }
   .grid-productos .info-producto .boton {
     text-decoration: none;
     border: .11rem solid;
