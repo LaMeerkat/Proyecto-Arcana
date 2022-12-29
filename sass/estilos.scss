@@ -76,6 +76,19 @@ footer{
 
 
 // PRODUCTOS
+.carrito{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 20px 10%;
+     /* box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px; */
+     box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+        /* margin-bottom: 20px; */  
+    h1{
+        font-size: 20px;
+    }
+}
+
 .imagen-productos{
     img{
         width: 100%;
@@ -104,6 +117,7 @@ footer{
         }
     }
 
+ 
 }
 
 //NOSOTROS
@@ -348,5 +362,4 @@ footer{
 
 
 }
-
 
